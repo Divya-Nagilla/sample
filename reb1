@@ -14,7 +14,7 @@ cat >> fname --> append data
 --
 ctrl+d
 
-3) VI editor
+3) VI editor points
 
 vi fname
 esc i --> insert data
