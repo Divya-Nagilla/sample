@@ -23,6 +23,15 @@ esc :wq! --> save and quit
 
 --------------------------------
 
+FETCH+MERGE
+-----------
+git branch -r (remote branches)
+git branch -a (normal branches)
+
+git fetch origin/master
+git merge origin/master
+
+FETCH+MERGE=PULL
 
 
 
