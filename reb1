@@ -1,0 +1,113 @@
+Create files 
+----------
+1) touch fname
+
+2) cat > fname
+   --
+   --
+   ctrl + d
+create a file and enter data
+
+cat fname --> view data in file
+
+cat >> fname --> append data
+--
+--
+ctrl+d
+
+3) VI editor
+
+vi fname
+esc i --> insert data
+esc :wq! --> save and quit
+
+--------------------------------
+
+
+
+
+GIT AND GIT HUB
+--------------
+
+git init
+touch fname
+git add fname
+git commit -m "label" fname
+--------------------
+
+MULTIPLE FILES
+---------------
+touch f1 f2 f3
+git add .
+git add *
+git add f1 f2 f3
+git commit -m "label" 
+
+-----------------
+git reset HEAD fname (staging/index to workspace)
+git reset --soft cid(n-1)(local repo to staging)
+git reset --mixed cid(local repo to workspace)
+git reset --hard cid(delete logs)
+git commit -m "label" fname(workspace to local repo)
+------------------------
+
+
+git clone path-of-central-repo(clone the central repo)
+touch fname
+git add .
+git commit -m "label" fname
+git push (push data to central repo)
+
+Delete a file-->
+delete in directory(local machine)
+then add and commit, then push
+
+ADD A DIRECTORY
+--------------
+mkdir dirname
+cd dirname
+touch f1 f2 f3
+cd ..
+git add .
+git commit -m "dir commit"
+git push
+
+REMOVE A FILE FROM DIR
+----------------------
+rm -rf dirname/fname
+git status
+git add .
+git commit -m "label" 
+git push
+
+git pull -- rebase(update your local machine with changes in local repo)
+
+-----------------
+
+LOGS
+----
+
+git log
+git log -n
+git log --oneline
+git log --oneline -n
+
+--Author specific--
+git log --author=authname
+git log --author=authname --oneline
+git log --author=authname -n
+git log --author=authname --oneline -n
+
+--Date Specific--
+git log --since="yy-mm--dd" or git log --after="yy-mm--dd"
+git log --until="yy-mm--dd" or git log --before="yy-mm--dd"
+git log --since="yy-mm--dd" --until="yy-mm--dd"
+git log --after="yy-mm--dd" --before="yy-mm--dd"
+git log --since="yy-mm--dd hh:mm" --until="yy-mm--dd hh:mm"
+git log --after="yy-mm--dd hh:mm" --before="yy-mm--dd hh:mm"
+
+git log fname --> file specific
+git log --grep="label" -> based on commit message
+
+-----------------------------------------------------------------------------------
+
