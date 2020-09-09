@@ -2,18 +2,6 @@ Create files
 =================
 1) touch fname
 
-2) cat > fname
-   --
-   --
-   ctrl + d
-create a file and enter data
-
-cat fname --> view data in file
-
-cat >> fname --> append data
---
---
-ctrl+d
 
 3) VI editor
 
